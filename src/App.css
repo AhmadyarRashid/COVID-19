@@ -7,4 +7,5 @@
   -moz-font-feature-settings: "liga= 1","calt=0";
   -moz-font-feature-settings: "liga" 1,"calt" 0;
   font-feature-settings: "liga" 1,"calt" 0;
+  background-color: #000000;
 }

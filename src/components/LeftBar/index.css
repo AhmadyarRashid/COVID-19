@@ -1,0 +1,13 @@
+.main{
+    margin: 8px;
+    background-color: #222222;
+}
+.title{
+    color: #bdbdbd;
+    text-align: center;
+}
+.total-count{
+    color: red;
+    text-align: center;
+    font-size: 32px;
+}

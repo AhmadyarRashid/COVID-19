@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Col} from 'antd';
+import {MenuOutlined, SketchOutlined} from '@ant-design/icons';
 import './index.css';
 
 class Header extends Component {
@@ -9,11 +9,13 @@ class Header extends Component {
 
     render() {
         return (
-            <Col span={24} className="header-bg">
-                <h2 className="header-text-color">
+            <div className="header-bg">
+                <SketchOutlined className="logo-icon" />
+                <span className="header-text-color">
                     Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopki...
-                </h2>
-            </Col>
+                </span>
+                <MenuOutlined className="menu-icon" />
+            </div>
 
         )
     }
