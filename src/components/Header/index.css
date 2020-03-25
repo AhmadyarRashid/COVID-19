@@ -1,0 +1,10 @@
+.header-bg{
+    background-color: #222222;
+}
+
+.header-text-color{
+    color: #8f8f8f;
+    padding: 8px;
+    flex-shrink: 1;
+    overflow: hidden;
+}
