@@ -9,5 +9,18 @@
 .total-count{
     color: red;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
+}
+.country-total{
+    color: red;
+}
+.country-name{
+    color: white;
+}
+.country-detail{
+    padding-left: 12px;
+}
+.country-list{
+    height: 380px;
+    overflow-y: scroll;
 }
