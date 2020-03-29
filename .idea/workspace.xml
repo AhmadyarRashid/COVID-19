@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebaaf6e1-6d39-42c8-9837-38a5071529e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/covid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LeftBar/LastUpdate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/MapFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightBar/Graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightBar/InfectedDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RightBar/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftBar/CountryConfirmed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftBar/CountryConfirmed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftBar/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftBar/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/covid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/instragram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/youtube.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,20 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/RightBar/InfectedDetails.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,6 +27,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gi</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,36 +82,10 @@
               <item name="covid-19" type="b2602c69:ProjectViewProjectNode" />
               <item name="covid-19" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="covid-19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid-19" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid-19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid-19" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid-19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid-19" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="LeftBar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid-19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid-19" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="RightBar" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,18 +147,18 @@
       <updated>1585158045466</updated>
       <workItem from="1585158047316" duration="6848000" />
       <workItem from="1585243416159" duration="94000" />
-      <workItem from="1585415517824" duration="5373000" />
+      <workItem from="1585415517824" duration="6522000" />
+      <workItem from="1585496425837" duration="659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12315000" />
+    <option name="totallyTimeSpent" value="14123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15252976" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.171875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -217,7 +172,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3268921" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6988728" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -403,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/RightBar/InfectedDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="-906">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="40" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

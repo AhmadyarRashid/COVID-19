@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
-from instragram import main
-from youtube import main as youtubeMain
+from covid import main
 from flask_cors import CORS
 from selenium import webdriver
 
@@ -16,27 +15,15 @@ options.add_argument('--log-level=3')
 
 driver = webdriver.Chrome("./chromedriver", chrome_options=options)
 
-
 @app.route('/')
 def basic():
     return 'Server is running ....'
 
 @app.route('/getInitialData', methods=['GET'])
 def covid():
-    return 'this is initial data of covid'
-
-@app.route('/instragram', methods=['GET'])
-def instragram():
-    url = request.args.get('url')
-    result = main(url, driver)
-    return result
-
-@app.route('/youtube', methods=['GET'])
-def youtube():
-    url = request.args.get('url')
-    result = youtubeMain(url, driver)
-    return result
-
+    url = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+    data = main(url, driver)
+    return data
 
 if __name__ == '__main__':
     app.run()
