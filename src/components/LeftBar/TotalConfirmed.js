@@ -10,7 +10,7 @@ class TotalConfirmed extends Component{
         return(
             <div className="main">
                 <h4 className="title">Total Confirmed</h4>
-                <h2 className="total-count"> 451,355 </h2>
+                <h2 className="total-count"> {this.props.confirmed} </h2>
             </div>
         )
     }

@@ -7,76 +7,27 @@ class CountryConfirmed extends Component {
         super(props);
     }
 
+    renderCountry = () => {
+        console.log('--- confirmed country ----', this.props.data);
+        return this.props.data.map(item => {
+            return (
+                <>
+                    <div>
+                        <h3 className='country-detail'><b className='country-total'></b> <span
+                            className='country-name'>{item}</span></h3>
+                    </div>
+                    <hr/>
+                </>
+            )
+        })
+    };
+
     render() {
         return (
             <div className='main'>
                 <h4 className='title'>Confirmed Cases by Country/Region/Sovereignty</h4>
                 <div className='country-list'>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>US</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>Itlay</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>Spain</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>Germany</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>Iran</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>France</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
-                    <div>
-                        <h3 className='country-detail'><b className='country-total'>830</b> <span
-                            className='country-name'>China</span></h3>
-                    </div>
-                    <hr/>
+                    {this.renderCountry()}
                 </div>
                 <div className='title'>
                     <LeftOutlined style={{float: 'left', marginLeft: 5}}/>

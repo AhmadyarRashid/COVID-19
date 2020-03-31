@@ -13,10 +13,10 @@ class Index extends Component{
             <div>
                 <Row>
                     <Col span={12}>
-                        <InfectedList status={'death'}/>
+                        <InfectedList status={'death'} {...this.props}/>
                     </Col>
                     <Col span={12}>
-                        <InfectedList status={'recoverd'}/>
+                        <InfectedList status={'recoverd'} {...this.props}/>
                     </Col>
                 </Row>
                 <GraphComponent/>

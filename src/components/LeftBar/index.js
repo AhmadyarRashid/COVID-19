@@ -11,8 +11,8 @@ class Index extends Component{
     render() {
         return(
             <div>
-                <TotalConfirmed/>
-                <CountryConfirmed/>
+                <TotalConfirmed {...this.props}/>
+                <CountryConfirmed {...this.props}/>
                 <LastUpdate/>
             </div>
         )

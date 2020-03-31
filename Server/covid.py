@@ -11,7 +11,7 @@ from html5lib import html5parser
 
 def main(url, driver):
     driver.get(url)
-    timeout = 50
+    timeout = 60
     try:
         element_present = EC.presence_of_element_located((By.ID, 'ember1049'))
         WebDriverWait(driver, timeout).until(element_present)
