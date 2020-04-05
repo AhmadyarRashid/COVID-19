@@ -11,7 +11,7 @@ class Index extends Component{
         return(
             <div>
                 <MapComponent/>
-                <MapFooter/>
+                <MapFooter {...this.props}/>
             </div>
         )
     }

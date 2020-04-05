@@ -18,3 +18,7 @@
     overflow-y: scroll;
     height: 80px;
 }
+.leaflet-container {
+    height: 400px;
+    width: 800px;
+}
