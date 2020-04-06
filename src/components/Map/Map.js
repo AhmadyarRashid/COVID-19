@@ -1,19 +1,23 @@
 import React, {Component} from 'react';
-import { Map as LeafletMap, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
-import worldGeoJSON from 'geojson-world-map';
+import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
 import './index.css';
 
-class Map extends Component{
-    constructor(props){
+class Map extends Component {
+    constructor(props) {
         super(props);
+        this.state = {
+            lat: '',
+            lng : ''
+        }
     }
 
-    render(){
-        return(
+    render() {
+        const {lat, lng} = this.props;
+        return (
             <div className='main-map'>
-                <h1 className='map-header'>World Map</h1>
                 <LeafletMap
-                    center={[50, 10]}
+                    className='map-leaflet'
+                    center={[lat, lng]}
                     zoom={6}
                     maxZoom={10}
                     attributionControl={true}
@@ -24,18 +28,12 @@ class Map extends Component{
                     animate={true}
                     easeLinearity={0.35}
                 >
-                    <GeoJSON
-                        data={worldGeoJSON}
-                        style={() => ({
-                            color: '#856b97',
-                            weight: 0.5,
-                            fillColor: "#222222",
-                            fillOpacity: 1,
-                        })}
+                    <TileLayer
+                        url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
                     />
-                    <Marker position={[50, 10]}>
+                    <Marker position={[lat, lng]}>
                         <Popup>
-                            Popup for any custom information.
+                            {this.props.selectedCountry}
                         </Popup>
                     </Marker>
                 </LeafletMap>
@@ -43,4 +41,5 @@ class Map extends Component{
         )
     }
 }
+
 export default Map;

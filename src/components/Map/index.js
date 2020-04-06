@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 import MapComponent from './Map';
 import MapFooter from './MapFooter';
 
-class Index extends Component{
-    constructor(props){
+class Index extends Component {
+    constructor(props) {
         super(props);
     }
 
     render() {
-        return(
+        return (
             <div>
-                <MapComponent/>
+                <MapComponent {...this.props}/>
                 <MapFooter {...this.props}/>
             </div>
         )

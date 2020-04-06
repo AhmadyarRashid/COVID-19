@@ -99,7 +99,7 @@ class CountryConfirmed extends Component {
 
     render() {
         return (
-            <div className='main'>
+            <div className='main main-confirmedCountry'>
                 {this.renderTitle()}
                 <div className='country-list'>
                     {this.renderCountry()}

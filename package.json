@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.0.4",
     "axios": "^0.19.2",
+    "country-js": "^0.0.9",
     "geojson-world-map": "^0.0.2",
     "leaflet": "^1.6.0",
     "react": "^16.13.1",

@@ -35,7 +35,7 @@ class InfectedDetails extends Component {
     render() {
         const {status, totalDeaths, totalRecovered, deaths, recovered} = this.props;
         return (
-            <div className='main'>
+            <div className='main main-infected'>
                 <h4 className='title'>Total{status == 'death' ? ' Deaths' : ' Recovered'}</h4>
                 <h2 className={status == 'death' ? 'total-count danger' : 'total-count success'}>{status == 'death' ? deaths : recovered}</h2>
 
