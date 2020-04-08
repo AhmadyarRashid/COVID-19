@@ -33,7 +33,10 @@ class Map extends Component {
                     />
                     <Marker position={[lat, lng]}>
                         <Popup>
-                            {this.props.selectedCountry}
+                            <p>Country Name :<b>{this.props.selectedCountry}</b></p>
+                            <p>Total Confirmed :<b>{this.props.totalConfirmed}</b></p>
+                            <p>Total Deaths :<b style={{color: 'red'}}>{this.props.totalDeaths}</b></p>
+                            <p>Total Recovered :<b style={{color:'green'}}>{this.props.totalRecovered}</b></p>
                         </Popup>
                     </Marker>
                 </LeafletMap>

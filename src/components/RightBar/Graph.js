@@ -33,7 +33,7 @@ class Graph extends Component {
                 includeZero: false
             },
             height: 200,
-            width: 420,
+            // width: 320,
             theme: "dark1",
             data: [{
                 yValueFormatString: "#,###",
@@ -43,7 +43,7 @@ class Graph extends Component {
             }]
         };
         return (
-            <div className='main' style={{height: 50, width: 400}}>
+            <div className='main'>
                 {data.length > 0 ?
                     < CanvasJSChart options={options} className='graph-canvas'
                     />

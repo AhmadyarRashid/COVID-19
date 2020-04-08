@@ -3,13 +3,13 @@ import {Row, Col} from 'antd';
 import InfectedList from './InfectedDetails';
 import GraphComponent from './Graph';
 
-class Index extends Component{
-    constructor(props){
+class Index extends Component {
+    constructor(props) {
         super(props);
     }
 
     render() {
-        return(
+        return (
             <div>
                 <Row>
                     <Col span={12}>
@@ -19,7 +19,11 @@ class Index extends Component{
                         <InfectedList status={'recoverd'} {...this.props}/>
                     </Col>
                 </Row>
-                <GraphComponent {...this.props}/>
+                <Row>
+                    <Col span={24}>
+                        <GraphComponent {...this.props}/>
+                    </Col>
+                </Row>
             </div>
         )
     }

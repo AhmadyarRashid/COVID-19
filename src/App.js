@@ -178,6 +178,9 @@ class App extends Component {
                                 selectedCountry={this.state.selectedCountry}
                                 lat={this.state.lat}
                                 lng={this.state.lng}
+                                totalConfirmed={this.state.confirmedCount}
+                                totalDeaths={this.state.deathsCounts}
+                                totalRecovered={this.state.recoveredCounts}
                             />
                         </Col>
                         <Col span={7}>
