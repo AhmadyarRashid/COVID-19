@@ -38,12 +38,9 @@ def main(url, driver):
         total_fig.append(item.text)
     payload = []
     list_of_confirmed_country = soup.find_all('span', attrs={'class': 'flex-horizontal feature-list-item ember-view'})
-    # print('---- now print left admin 1 panel ---')
     for data in list_of_confirmed_country[:]:
         item = data.text.strip()
         payload.append(str(item))
-        # if(len(item.split()) == 2):
-        #     print('-----', item)
     return {
         'confirmed': confirmed,
         'recovere': recovere,
