@@ -30,12 +30,6 @@ def main(url, driver):
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')
     total_confirmed = soup.find_all('text', attrs={'vector-effect':'non-scaling-stroke'})
-    # <text vector-effect="non-scaling-stroke" style="fill: rgb(230, 0, 0); stroke-width: 2px; font-size: 160px; line-height: normal;">685,623</text>
-    # for i in total_confirmed:
-    #     #     print('---' , i)
-    # print('--- Total confirmed ----', total_confirmed[1].text)
-    # print('--- Total Recovered ----', total_confirmed[-1].text)
-    # print('--- Total Death ----', total_confirmed[-3].text)
     confirmed = total_confirmed[1].text
     recovere = total_confirmed[-1].text
     death = total_confirmed[-3].text
@@ -57,36 +51,3 @@ def main(url, driver):
         'payload': payload,
         'totalFigure': total_fig
     }
-    # print('final response', response)
-    # print('----- now print confirmed Province/State/Dependency ---')
-    # for data in list_of_confirmed_country[:]:
-    #     item = data.text.strip()
-    #     if (len(item.split()) > 2 and item.split()[1] == 'confirmed'):
-    #         print('-----', item)
-    #
-    # print('----- now print death Province/State/Dependency ---')
-    # for data in list_of_confirmed_country[:]:
-    #     item = data.text.strip()
-    #     if (len(item.split()) > 2 and item.split()[1] == 'deaths'):
-    #         print('-----', item)
-    #
-    # print('----- now print Recovered Province/State/Dependency ---')
-    # for data in list_of_confirmed_country[:]:
-    #     item = data.text.strip()
-    #     if (len(item.split()) > 2 and item.split()[1] == 'recovered'):
-    #         print('-----', item)
-
-    # print('--- list of confirmed country ---',list_of_confirmed_country[0])
-    # driver.quit()
-#
-# options = webdriver.ChromeOptions()
-# options.add_argument('--ignore-certificate-errors')
-# options.add_argument('--incognito')
-# options.add_argument('--headless')
-# options.add_argument('--lang=en-us')
-# options.add_argument('--log-level=3')
-#
-# driver = webdriver.Chrome("./chromedriver", chrome_options=options)
-#
-# url = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
-# main(url, driver)
